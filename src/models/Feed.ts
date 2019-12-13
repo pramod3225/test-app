@@ -6,6 +6,14 @@ export interface IFeed {
     dateLastEdited: Date;
 }
 
+export interface IPaginatedFeed {
+    pageNo: number,
+    pageSize: number,
+    numberOfPages: number,
+    feeds: IFeed[],
+
+}
+
 export class Feed implements IFeed {
 
     public name: string;

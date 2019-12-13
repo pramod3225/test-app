@@ -10,7 +10,7 @@ export class MockDb {
     private readonly dbFilePath = 'src/mock/MockData.json';
    
 
-    protected openDb(): Promise<IFeedData> {
+    public openDb(): Promise<IFeedData> {
         return jsonfile.readFile(this.dbFilePath);
     }
 

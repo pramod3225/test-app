@@ -8,8 +8,8 @@
     "module": "commonjs",
     "outDir": "dist",
     "removeComments": true,
-    "sourceMap": true,
-    "strict": true,
+    "sourceMap": false,
+    "strict": false,
     "target": "es6",
     "moduleResolution": "node",    
     "types": [
@@ -24,6 +24,7 @@
     "spec/**/*.ts"
   ],
   "exclude": [
-    "src/public/"
+    "src/public/",
+    "node_modules/"
   ]
 }
